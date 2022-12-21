@@ -4,16 +4,17 @@ const App = () => {
   let filter = data.filter((a) => a.salary > 35000)
 
   let newdata = filter.reduce (( acc , bcc) =>{
-    return acc + bcc.id
-  },0)
+    return acc += bcc.bonus 
+  },0)    
+  // console.log(newdata);
   let medicineData = [
     {
       id: 101,
       name: 'Abacavir',
       quantity: 25, 
       price: 150,
-      expiry: 2022,
-      status: true
+      expiry: 2022,     
+      status: "true"
     },
     { 
       id: 102,
@@ -21,7 +22,7 @@ const App = () => {
       quantity: 90,
       price: 550,
       expiry: 2021,
-      status: true
+      status: "true"
     },
     {
       id: 103,
@@ -29,7 +30,7 @@ const App = () => {
       quantity: 85,
       price: 450,
       expiry: 2025,
-      status: false
+      status: "false"
     },
     {
       id: 104,
@@ -37,7 +38,7 @@ const App = () => {
       quantity: 50,
       price: 600,
       expiry: 2023,
-      status: true
+      status: "true"
     },
     {
       id: 105,
@@ -45,12 +46,12 @@ const App = () => {
       quantity: 63,
       price: 250,
       expiry: 2021,
-      status: false
+      status: "false"
     }
   ];
   return (
-    <div>
-      <table border={1}>
+    <div key={Math.random()}>
+      <table border={1} key={Math.random()}>
         <tr>
           <th>id</th>
           <th>name</th>
@@ -76,7 +77,7 @@ const App = () => {
       </table>
 
 
-      <table border={1}>
+      <table border={1} key={Math.random()}>
         <tr>
           <th>name</th>
           <th>age</th>
@@ -86,6 +87,7 @@ const App = () => {
         </tr>
         {
           filter.map((a) => {
+
             return (
               <tr>
                 <td>{a.name}</td>
@@ -95,15 +97,20 @@ const App = () => {
                 <td>{a.status}</td>
               </tr>
             )
-          })
+          } )
+    
         }
-        {/* <tr>
-          <td>Total</td>
-          <td colSpan={2}>{total}</td>
-        </tr> */}
+          <tr>
+          <td colSpan={3}>Total</td>
+          {/* <td></td> */}
+          {/* <td></td> */}
+          <td colSpan={2}>{newdata}</td>
+          {/* <td></td> */}
+        </tr>
+       
       </table>
     </div>
   )
 }
 
-export default App
+export default App;
