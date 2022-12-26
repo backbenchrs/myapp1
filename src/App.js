@@ -127,7 +127,6 @@ export default function PracticeData() {
     
     const bool = valid ? false : true 
     setValid(bool)
-
   }
   return (
     <div>
