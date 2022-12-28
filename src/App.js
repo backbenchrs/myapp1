@@ -4,7 +4,7 @@ import PracticeData from './PracticeData/PracticeData'
 const App = () => {
   return (
     <div>
-        <PracticeData/>
+         <PracticeData/>            
     </div>
   )
 }
