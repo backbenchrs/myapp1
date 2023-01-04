@@ -30,7 +30,7 @@ const Department = () => {
         </div>
         <nav id="navbar" className="navbar order-last order-lg-0">
           <ul>
-            <li><Link className="nav-link scrollto" to="/home">Home</Link></li>
+            <li><Link className="nav-link scrollto" to="/">Home</Link></li>
             <li><Link className="nav-link scrollto" to="/departments">Departments</Link></li>
             <li><Link className="nav-link scrollto" to="/doctors">Doctors</Link></li>
             <li><Link className="nav-link scrollto" to="/about">About</Link></li>

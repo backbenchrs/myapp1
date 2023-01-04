@@ -7,7 +7,9 @@ import React, { useState , useEffect } from 'react'
     setCount(count + 1)
   }
   const onClickHandlerr =  () => {
-    setCount(count - 1)
+    if (count > 0) {
+      setCount(count - 1)
+    }  
   }
 //   //  const [first, setfirst] = useState(0);
 // const [array, setArray] = useState(['a','b','c','d','e']);
