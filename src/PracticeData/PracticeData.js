@@ -1,22 +1,28 @@
 import React, { useState , useEffect } from 'react'
 
  const PracticeData = () => {
-//   //  const [first, setfirst] = useState(0);
-const [array, setArray] = useState(['a','b','c','d','e']);
-const [count, setCount] = useState(0);
+  const [ count , setCount] = useState(0);
 
-const btn = () => {
-  setCount(count + 1);
-}
-
-useEffect(() => {
-
-  
-  return () => {
-    alert('Do you really wanna close this tab')
-      
+  const onClickHandler =  () => {
+    setCount(count + 1)
   }
-}, [])
+  const onClickHandlerr =  () => {
+    setCount(count - 1)
+  }
+//   //  const [first, setfirst] = useState(0);
+// const [array, setArray] = useState(['a','b','c','d','e']);
+// const [count, setCount] = useState(0);
+
+// const btn = () => {
+//   setCount(count + 1);
+// }
+
+// useEffect(() => {
+//   return () => {
+//     alert('Do you really wanna close this tab')
+      
+//   }
+// }, [])
 
 //   //  const tap = () => {
 
@@ -28,20 +34,23 @@ useEffect(() => {
 //     prompt(`You clicked {count} times`)
 //   });
 
- 
+   
   return (
      <div>
       {/* <h1>{first}</h1>
 //       <button onClick={tap}>Click Me</button> */}
-       <h3> {array[count]} 
+       {/* <h3> {array[count]} 
          <button onClick={btn}> Click me </button>
-       </h3>
+       </h3> */}
+       <h1>{count}</h1>
+    <button onClick={onClickHandler}> <h1>+</h1> </button>
+    <button onClick={onClickHandlerr}> <h1>-</h1> </button>
     
     </div>
   )
  }
 
- export default PracticeData
+ export default PracticeData;
 
 // import React, { useEffect, useState } from "react";
  
