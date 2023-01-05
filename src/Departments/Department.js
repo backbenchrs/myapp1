@@ -38,8 +38,8 @@ const Department = () => {
           </ul>
           <i className="bi bi-list mobile-nav-toggle" />
         </nav>
-        <a href="./appointment.html" className="appointment-btn scrollto"><span className="d-none d-md-inline">Make an</span>
-          Appointment</a>
+        <Link to="/appointment" className="appointment-btn scrollto"><span className="d-none d-md-inline">Make an</span>
+          Appointment</Link>
       </div>
     </header>
   </div>

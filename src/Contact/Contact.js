@@ -30,7 +30,7 @@ const Contact = () => {
         </div>
         <nav id="navbar" className="navbar order-last order-lg-0">
           <ul>
-            <li><Link className="nav-link scrollto" to="/home">Home</Link></li>
+            <li><Link className="nav-link scrollto" to="/">Home</Link></li>
             <li><Link className="nav-link scrollto" to="/departments">Departments</Link></li>
             <li><Link className="nav-link scrollto" to="/doctors">Doctors</Link></li>
             <li><Link className="nav-link scrollto" to="/about">About</Link></li>
@@ -38,8 +38,8 @@ const Contact = () => {
           </ul>
           <i className="bi bi-list mobile-nav-toggle" />
         </nav>
-        <a href="./appointment.html" className="appointment-btn scrollto"><span className="d-none d-md-inline">Make an</span>
-          Appointment</a>
+        <Link to="/appointment" className="appointment-btn scrollto"><span className="d-none d-md-inline">Make an</span>
+          Appointment</Link>
       </div>
     </header>
   </div>

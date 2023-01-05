@@ -28,7 +28,8 @@ const Footer = () => {
                         <a href="#" className="linkedin"><i className="bx bxl-linkedin" /></a>
                     </div>
                 </div>
-            </footer></div>
+            </footer>
+        </div>
     )
 }
 
