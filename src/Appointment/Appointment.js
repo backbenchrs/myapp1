@@ -1,11 +1,14 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
+
+
 const Appointment = () => {
   const onSubmiter = (event) => {
     event.preventDefault();
     console.log(event);
-  }
+  }  
+
   return (
     <div>
 
@@ -60,6 +63,7 @@ const Appointment = () => {
               </div>
               <div className="text-center"><button type="submit">Make an Appointment</button></div>
             </form>
+            {/* <button onSubmit={handleSubmit}>Reset form</button> */}
           </div>
         </section>
         {/* <footer id="footer">
@@ -85,6 +89,9 @@ const Appointment = () => {
             </div>
           </div>
         </footer> */}
+
+   <a href='https://chrome.google.com/'>Google</a>
+    
       </div>
 
     </div>

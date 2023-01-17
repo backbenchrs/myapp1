@@ -40,9 +40,9 @@ const Home = () => {
             </nav>
             <Link to="/appointment" className="appointment-btn scrollto"><span className="d-none d-md-inline">Make an</span>
               Appointment</Link>
-            <a href="#" className="appointment-btn scrollto">
-              <span className="d-none d-md-inline">Login/ Signup</span>
-            </a>
+            <Link to="/login" className="appointment-btn scrollto">
+              <span className="d-none d-md-inline">Login/Signup</span>
+            </Link>
           </div>
         </header>
       </div>

@@ -24,6 +24,9 @@ const Header = () => {
           </nav>
           <a href="./appointment.html" className="appointment-btn scrollto"><span className="d-none d-md-inline">Make an</span>
             Appointment</a>
+            <Link to="/login" className="appointment-btn scrollto">
+              <span className="d-none d-md-inline">Login/Signup</span>
+            </Link>
         </div>
       </header>
     </div>

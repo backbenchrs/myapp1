@@ -1,16 +1,16 @@
 import React, { useState , useEffect } from 'react'
 
  const PracticeData = () => {
-  const [ count , setCount] = useState(0);
+  // const [ count , setCount] = useState(0);
 
-  const onClickHandler =  () => {
-    setCount(count + 1)
-  }
-  const onClickHandlerr =  () => {
-    if (count > 0) {
-      setCount(count - 1)
-    }  
-  }
+  // const onClickHandler =  () => {
+  //   setCount(count + 1)
+  // }
+  // const onClickHandlerr =  () => {
+  //   if (count > 0) {
+  //     setCount(count - 1)
+  //   }  
+  // }
 //   //  const [first, setfirst] = useState(0);
 // const [array, setArray] = useState(['a','b','c','d','e']);
 // const [count, setCount] = useState(0);
@@ -36,19 +36,67 @@ import React, { useState , useEffect } from 'react'
 //     prompt(`You clicked {count} times`)
 //   });
 
+  const data = [{
+      name : 'Alpha',
+      age : 12,
+      salary : 123
+  },
+{
+  name : 'Meta',
+  age : 11,
+  salary : 122
+},
+{
+  name : 'Pusher',
+  age : 10,
+  salary : 1022
+},
+{
+  name : 'Lava',
+  age : 13,
+  salary : 1122
+},
+{
+  name : 'Poko',
+  age : 16,
+  salary : 1062
+},
+{
+  name : 'Node',
+  age : 6,
+  salary : 1622
+},
+{
+  name : 'React',
+  age : 20,
+  salary : 1922
+}
 
-   
+]
+
+ const filter = data.filter((i) => i.age < 15)  
   return (
      <div>
-      {/* <h1>{first}</h1>
+      <h1>{first}</h1>
 //       <button onClick={tap}>Click Me</button> */}
-       {/* <h3> {array[count]} 
+       <h3> {array[count]} 
          <button onClick={btn}> Click me </button>
-       </h3> */}
+       </h3>
        <h1>{count}</h1>
     <button onClick={onClickHandler}> <h1>+</h1> </button>
     <button onClick={onClickHandlerr}> <h1>-</h1> </button>
-    
+   {
+    filter.map((i) => {
+      return(
+        <table>
+          <tr>
+            <th>{i.age}</th>
+            <th>{i.name}</th>
+          </tr>
+        </table>
+      )
+    })
+  }
     </div>
   )
  }
@@ -71,6 +119,6 @@ import React, { useState , useEffect } from 'react'
 //   return (
 //     <div>
 //       {/* <h1>{value ? "hello" : "hey"}</h1>
-//       <button onClick={clickHandler}>Click me</button> */}
+//       <button onClick={clickHandler}>Click me</button> 
 //     </div>
 //   )};
